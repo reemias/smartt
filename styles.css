@@ -1,0 +1,355 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundSlide 20s linear infinite;
+}
+
+@keyframes backgroundSlide {
+    0% {
+        background-image: url("imagens/image1.lnk");
+        transform: scale(1.05);
+    }
+    33% {
+        background-image: url("imagens/image2.lnk");
+    }
+    66% {
+        background-image: url("imagens/image3.lnk");
+    }
+    100% {
+        background-image: url("imagens/image1.lnk");
+        transform: scale(1.05);
+    }
+}
+
+p { 
+    text-align: center;
+    margin-top: 20px;
+    color: #000011;
+    font-weight: bolder;
+}
+h5 {
+    text-align: center;
+    margin: 60px 0;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+h4 {
+    text-align: center;
+    margin: 20px 0;
+    color: #0e0d0d;
+}
+
+h3 {
+    text-align: center;
+    margin: 5px 0;
+    margin-top: 250px;
+    color: #f7f2f2;
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bolder; /* Adicione negrito para um destaque maior */
+    letter-spacing: 2px; /* Aumente o espaçamento entre as letras para melhor legibilidade */
+}
+
+
+
+
+h1 {
+    color: #fcf5f5;
+    text-align: center;   
+}
+
+h2 {
+    color: #faf4f4;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    margin-top: 10px;
+}
+
+img {
+    border: 15px solid #498123e0;
+    border-radius: 50%;
+    padding: 30px;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+img:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
+header {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #fcfffe98;
+    border-color: #024d45;
+    border-bottom: #070707;
+}
+
+.circle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    0% {
+        transform: translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100px) rotate(360deg);
+    }
+}
+
+
+
+.rectangle-box {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #024d45;
+    border: 2px solid #4db6ac;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: scale(1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.rectangle-box:hover {
+    background-color: #037c6b;
+    transform: scale(1.05);
+}
+
+.rectangle-box2 {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #eceff1;
+    border: 2px solid #cfd8dc;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    transform: translateY(0);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #26a69a;
+}
+
+.search-button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #26a69a;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-button:hover {
+    background-color: #007d71;
+    transform: scale(1.05);
+}
+
+.comment {
+    margin-top: 20px;
+    background-color: #f9f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+.rectangle-box2:hover {
+    background-color: #d4d9db;
+    transform: translateY(-10px);
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #26a69a;
+}
+
+.search-button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #26a69a;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-button:hover {
+    background-color: #007d71;
+    transform: scale(1.05);
+}
+
+/* Estilos para os botões de download */
+.pdf-download-button {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #007d71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pdf-download-button:hover {
+    background-color: #005c52;
+    transform: scale(1.05);
+}
+
+
+
+.download-button1 {
+    margin-inline: 640px;
+    border-color: #dfee07;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-top: 100px;
+    background-color: #030303;
+    border: 40px; ;
+    cursor: pointer;
+    font-size: 16px;
+    }
+
+    .download-button2 {
+        margin-inline: 640px;
+        border-color: #c9ff07;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 30px;
+        margin-top: 100px;
+        background-color: #f80606;
+        border: 40px; ;
+        
+        cursor: pointer;
+        font-size: 16px;
+        }
+
+.download-button {
+margin-inline: 640px;
+border-color: #007d71;
+border: none;
+border-radius: 10px;
+
+
+padding: 15px 30px;
+margin-top: 100px;
+background-color: #26a69a;
+border: 1000px; ;
+
+cursor: pointer;
+font-size: 16px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* Efeito de hover nos botões */
+.search-button:hover {
+    background-color: #007d71;
+    ; 
+}
+.pdf-download-button:hover {
+  background-color: #007d71;
+    ;  
+}
+
+
+h6 {
+    color: #f9f9fa;
+    font-size: 50px; /* Aumentando o tamanho da fonte */
+}
+
+/* Resto do seu código CSS permanece o mesmo... */
+
+
+
